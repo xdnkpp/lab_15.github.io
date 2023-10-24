@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script> 
+    <style>
+*{
+    background-color: #ffd2fd;
+}
+
+.tasks p{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 40px 5px;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    border-radius: 4px;
+    font-size: larger;
+    font-weight: 50%;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.calculator {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+input[type="text"], input[type="button"] {
+    width: 130px;
+    height: 30px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>JS задачки</h1>
+    <hr>
+    <div class="tasks">
+        <p onclick="fun1()">Задание №1<br>Вычисление факториала:
+            Напишите функцию, которая вычисляет факториал числа.</p> 
+        <p onclick="fun2()">Задание №2<br>Проверка на простое число:
+            Задача: Напишите функцию, которая проверяет, является ли число простым.</p> 
+        <p>Задание №3<br>Создайте калькулятор с помощью CSS</p>
+        <div class="calculator">
+                <label type="text">1st Number</label>
+                <input type="text" id="firstNumber"><br>
+                <label type="text">2st Number</label>
+                <input type="text" id="secondNumber">
+                <br>
+                <input type="button" value="Multiple" onclick="calculate('*')">
+                <input type="button" value="Divide" onclick="calculate('/')">
+                <br>
+        <div id="result">
+        </div>
+        </div>
+        <p>Задание №4<br>Создайте Javascript quiz c 3 вопросами</p>
+        <div class="question">Question 1: What is 2+2?</div>
+        <div class="answers">
+        <input type="radio" name="answer" data-answer="4">
+        <label for="answer-0">4</label><br>
+        <input type="radio" name="answer" data-answer="5">
+        <label for="answer-1">5</label><br>
+        <input type="radio" name="answer" data-answer="6">
+        <label for="answer-2">6</label><br>
+        <input type="radio" name="answer" data-answer="7">
+        <label for="answer-2">7</label>
+        </div>
+        <input onclick="fun4()" type="button" class="submit" value="Submit Answer">
+        <div class="score"></div>
+        <div class="result"></div>
+    </div>
+</body>
+</html>
